@@ -11,21 +11,20 @@ jobs:
 
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest]
-        version: [14, 16, 18, 20]
+        node-version: [14, 16, 18, 20]
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4 # Use a more recent version of setup-node action
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.version }}
+          node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: npm ci # Use npm ci for more reliable dependency installation
+        run: npm ci
 
       - name: Build project
         run: npm run build
@@ -39,7 +38,7 @@ jobs:
   deploy:
     name: Deploy
     needs: build
-    runs-on: ubuntu-latest # GitHub Pages deployment typically works well on Ubuntu
+    runs-on: ubuntu-latest
 
     steps:
       - name: Download artifact
