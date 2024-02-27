@@ -148,7 +148,7 @@ export const experiences = [
   },
   {
     title: "Junior Software Engineer",
-    company_name: "Aptlogca Technologies Pvt. Ltd.",
+    company_name: "Aptlogca Technologies Pvt. Ltd. ",
     icon: aptlogica,
     iconBg: "#a2d2ff",
     date: "April 2023 - Sept 2023",
@@ -196,7 +196,7 @@ export const projects = [
     name: "React Reusable Components",
     description:
       "I've crafted a suite of reusable ReactJS components to streamline front-end development. These components are designed to enhance UI consistency, improve code maintainability, and expedite the creation of interactive and responsive user interfaces.",
-    link: "https://github.com/Malavivikas/Components",
+    link: "https://malavivikas.github.io/Components",
   },
   {
     iconUrl: car,
@@ -204,6 +204,6 @@ export const projects = [
     name: "Insights App",
     description:
       "Designed and built a static insights app which contains Dashboard with table and doughnut chart and a create Ad multistep form with Material UI and chart.",
-    link: "https://github.com/Malavivikas/kewordio-test",
+    link: "https://malavivikas.github.io/kewordio-test/",
   },
 ];
