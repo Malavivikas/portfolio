@@ -188,7 +188,7 @@ export const projects = [
     name: "Books",
     description:
       "Designed and developed a books gallery. Created basic add, remove, update and delete functionality with axios and json server in React.",
-    link: "https://github.com/Malavivikas/Books",
+    link: "https://Malavivikas.github.io/Books",
   },
   {
     iconUrl: threads,
@@ -204,6 +204,6 @@ export const projects = [
     name: "Insights App",
     description:
       "Designed and built a static insights app which contains Dashboard with table and doughnut chart and a create Ad multistep form with Material UI and chart.",
-    link: "https://malavivikas.github.io/kewordio-test/",
+    link: "https://malavivikas.github.io/keywordio-test/",
   },
 ];
